@@ -1,0 +1,9 @@
+<h1>Delete a book </h1>
+
+<%= form_with model: @book, url: book_path(@book), method: :delete do %>
+    <%= submit_tag "Confirm" %>
+<% end %>
+
+<div>
+  <%= link_to "Back to books", books_path %>
+</div>
